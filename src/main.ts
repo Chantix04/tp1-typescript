@@ -1,0 +1,26 @@
+import { Calculadora } from "./ejercicios/calculadora";
+import { parImpar } from "./ejercicios/parImpar";
+import { Multiplicar } from "./ejercicios/tablamultiplicar";
+import { Fibonacci } from "./ejercicios/fibonacci";
+
+document.addEventListener("DOMContentLoaded", ()=>{
+  const btnCalcular = document.getElementById("calculate");
+
+  btnCalcular?.addEventListener("click", () => Calculadora())
+})
+
+document.addEventListener("DOMContentLoaded", ()=>{
+  const btnParImpar = document.getElementById("btnParImpar")
+
+  btnParImpar?.addEventListener("click", ()=> parImpar())
+})
+document.addEventListener("DOMContentLoaded", ()=>{
+  const btnMultiplicar = document.getElementById("btnMultiplicar")
+
+  btnMultiplicar?.addEventListener("click", ()=> Multiplicar())
+})
+document.addEventListener("DOMContentLoaded", ()=>{
+  const fibonacci = document.getElementById("btnFibonacci")
+
+  fibonacci?.addEventListener("click", ()=> Fibonacci())
+})
