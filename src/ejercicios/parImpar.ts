@@ -1,6 +1,6 @@
 export function parImpar(){
     const numInput = document.getElementById('contParImpar') as HTMLInputElement;
-    const resultDiv = <HTMLLIElement> document.getElementById("resultado2")
+    const resultDiv = <HTMLElement> document.getElementById("resultado2")
 
     const num = parseFloat(numInput.value)
 
