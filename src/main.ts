@@ -2,6 +2,7 @@ import { Calculadora } from "./ejercicios/calculadora";
 import { parImpar } from "./ejercicios/parImpar";
 import { Multiplicar } from "./ejercicios/tablamultiplicar";
 import { Fibonacci } from "./ejercicios/fibonacci";
+import { Convertidor } from "./ejercicios/temperatura";
 
 document.addEventListener("DOMContentLoaded", ()=>{
   const btnCalcular = document.getElementById("calculate");
@@ -23,4 +24,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
   const fibonacci = document.getElementById("btnFibonacci")
 
   fibonacci?.addEventListener("click", ()=> Fibonacci())
+})
+document.addEventListener("DOMContentLoaded", ()=>{
+  const temperatura = document.getElementById("btnTemperatura");
+
+  temperatura?.addEventListener("click", ()=> Convertidor())
 })

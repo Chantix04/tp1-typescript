@@ -7,8 +7,16 @@ export function Convertidor (){
     const convertTo = convertSelect.value;
     switch (convertTo) {
         case "Celsius": 
-            let result:number;
-            result = (num-32)*(5/9)
-            resultDiv.textContent = `Convertido de ${num}° Fahrenheit a ${result}° Celsius`
+            let resultCelsius:number;
+            resultCelsius = (num-32)*(5/9)
+            resultDiv.textContent = `Convertido de ${num}° Fahrenheit a ${resultCelsius.toFixed(2)}° Celsius`
+            break;
+        case "Fahrenheit":
+             let resultFahrenheit:number; 
+             resultFahrenheit = (num*(9/5)) + 32;
+             resultDiv.textContent = `Convertido de ${num} Celsius a ${resultFahrenheit.toFixed(2)} Fahrenheit`
+             break;
+        default: 
+        resultDiv.textContent = `Operación inválida.`
     }
 }
